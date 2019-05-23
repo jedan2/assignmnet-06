@@ -1,0 +1,377 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* padding: 10px; */
+}
+img{
+    max-width: 100%;
+    display: block;
+}
+body{font-family: 'Lato', sans-serif;font-size: 16px;}
+.content{
+    width: 1100px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+/****************
+Header area
+***************/
+header{padding: 25px 0;background: #f6f9f9;}
+.logo{
+    width: 20%;
+    float: left;
+}
+.logo img{
+    width: 165px;
+    height: 42px;
+}
+.menubar{
+    width: 80%;
+    float: left;
+}
+.menubar ul{text-align: right;}
+.menubar ul li{
+    list-style: none;
+    display: inline-block;
+    padding-left: 45px;
+}
+.menubar ul li a{
+    text-decoration: none;
+    text-align: right;
+    display: block;
+    font-size: 16px;
+    text-transform: uppercase;
+    color: #2d3950;
+    transition: all 0.4s;
+    padding: 10px 0;
+    font-weight: 700;
+}
+.menubar ul li a:hover{
+    color: #15a4fa;
+}
+
+
+/****************
+Banner area
+***************/
+.banner{
+    position: relative;
+}
+.banner_content{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+    color: #fff;
+    width: 50%;
+}
+.banner h1{
+    font-size: 120px;
+    text-transform: uppercase;
+    padding-bottom: 0px;
+}
+.banner hr{
+    border-color: #15a4fa;
+}
+.banner p{
+    font-size: 20px;
+    font-weight: 400;
+    padding-top: 40px;
+}
+.banner img{}
+.fa_icon_down{
+    position: absolute;
+    bottom: 10%;
+    left: 50%;
+    color: #fff;
+}
+.btn{
+    padding-top: 60px;
+}
+.btn a{
+    border-radius: 3px;
+    text-decoration: none;
+    color: #fff;
+    border: 1px solid #15a4fa;
+    padding: 18px 35px;
+    transition: all 0.4s;
+}
+.btn a:hover{
+    background:#15a4fa; 
+}
+
+/****************
+Article area
+***************/
+.article{
+    text-align: center;
+    padding: 70px 0;
+    background: #f6f9f9;
+}
+.about h2{
+    font-size: 40px;
+    color: #2d3950;
+    padding-bottom: 35px;
+}
+.about p{
+    font-size: 20px;
+    color: #999999;
+    font-weight: 100;
+    line-height: 1.6em;
+}
+
+
+/****************
+icon area
+***************/
+.icon{
+    padding: 65px 0;
+}
+.row{
+    width: 33.33%;
+    float: left;
+    text-align: center;
+    padding: 10px;
+}
+.row h3{
+    font-size: 22px;
+    color: #2d3950;
+    text-transform: capitalize;
+    padding: 25px 0;
+}
+.row p{
+    font-size: 16px;
+    color: #999999;
+    font-weight: 100;
+    line-height: 1.6em;
+}
+.icon_logo{
+    font-size: 50px;
+    color: #fff;
+    width: 100px;
+    height: 100px;
+    margin: 0 auto;
+    line-height: 100px;
+    text-shadow: 1px 1px 1px black;
+    background: rgb(72,186,255);
+    background: linear-gradient(90deg, rgba(72,186,255,1) 0%, rgba(72,186,255,1) 50%, rgba(95,195,255,1) 50%);
+}
+.icon_logo i{
+    
+}
+
+
+
+/****************
+icon area
+***************/
+.portfulio{
+    background: #f6f9f9;
+}
+.portfulio_heading{
+    text-align: center;
+    padding: 70px 0;
+}
+.portfulio_heading h1{
+    font-size: 41px;
+    color: #2d3950;
+    padding-bottom: 20px;
+}
+.portfulio_heading p{
+    font-size: 15px;
+    color: #909090;
+}
+ .work{
+    width: 33.33%;
+    float: left;
+    padding: 15px;
+}
+.work_box{
+    position: relative;
+}
+ .work img{
+    width: 100%;
+}
+ .overlay{
+    position: absolute;
+    background: rgba(72, 186, 255, 0.75);
+    height: 100%;
+    width: 100%;
+     opacity: 0; 
+    top: 0;
+    left: 0;
+    transition: all 0.4s;
+}
+.work:hover .overlay{
+    opacity: 1;
+}
+ .search{
+    position: absolute;
+    left: 40%;
+    top: 60%;
+    transform: translate(-40%,-60%);
+    color: #fff;
+    font-size: 15px;
+    border: 1px solid #fff;
+    width: 40px;
+    height: 40px;
+    display: block;
+    line-height: 40px;
+    padding-left: 12px;
+    opacity: 0;
+    transition:all 0.4s;
+    border-radius: 3px;
+}
+.work:hover .search{
+    opacity: 1;
+    left: 42%;
+    top: 50%;
+    transform: translate(-42%,-50%);
+}
+ .link{
+    position: absolute;
+    left: 60%;
+    top: 60%;
+    transform: translate(-60%,-60%);
+    color: #fff;
+    font-size: 15px;
+    border:  1px solid #fff;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    padding-left: 12px;
+    opacity: 0;
+    transition:all 0.4s;
+    border-radius: 3px;
+}
+
+.work:hover .link{
+    opacity: 1;
+    left: 60%;
+    top: 50%;
+    transform: translate(-60%,-50%);
+}
+
+/*************
+login
+************/
+.log_in{
+    position: relative;
+}
+.bckground_img{}
+.over_layout{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: #2a354bd1;
+}
+.log_inbox{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.log_inbox h3{
+    color: #fff;
+    font-size: 41px;
+    text-align: center;
+    margin-bottom: 15px;
+}
+.log_inbox p{
+    text-align: center;
+    font-size: 15px;
+    color: #999999;
+}
+.log_inbox form{
+    width: 550px;
+    margin-top: 50px;
+}
+.log_inbox input{
+    width: 100%;
+    border: 1px solid #999999;
+    padding: 10px;
+    margin-bottom: 15px;
+    background: none;
+    border-radius: 3px;
+}
+.log_inbox textarea{
+    width: 100%;
+    border: 1px solid #999999;
+    padding: 10px;
+    margin-bottom: 15px;
+    background: none;
+    border-radius: 3px;
+}
+.checkbox{
+    color: #fff;
+    float: left;
+}
+.checkbox input{
+    width: auto;
+    cursor: pointer;
+}
+.checkbox span{
+    padding-left: 5px
+}
+.btn_1{
+    float: right;
+}
+.btn_1 button{
+    border-radius: 3px;
+    text-decoration: none;
+    color: #fff;
+    border: 1px solid #15a4fa;
+    padding: 12px 25px;
+    transition: all 0.4s;
+    background: transparent;
+    cursor: pointer;
+}
+.btn_1:hover button{
+    background:#15a4fa; 
+}
+
+
+/*************
+footer
+************/
+footer{
+    background: #f9f9f9;
+    padding: 36px 0;
+}
+.copy_right p{
+    text-align: center;
+    font-size: 15px;
+    color: #999999;
+}
+.copy_right{
+    float: left;
+    width: 50%;
+}
+.social_icon{
+    float: left;
+    width: 50%;
+}
+.social_icon ul{
+    text-align: right;
+}
+.social_icon ul li{
+    list-style: none;
+    display: inline-block;
+}
+
+.social_icon ul li a{
+    font-size: 15px;
+    background: #48baff;
+    width: 30px;
+    height: 30px;
+    display: block;
+    line-height: 30px;
+    text-align: center;
+    color: #fff;
+    border-radius: 3px;
+}

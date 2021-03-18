@@ -1,1 +1,1 @@
-# assignmnet-06
+Strict landing page
